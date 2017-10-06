@@ -29,32 +29,26 @@ namespace CandyShopApp
             // The CandyShop should print properties represented as string in this format:
             // "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
             var candyShop = new CandyShop(300);
+
             candyShop.CreateCandies();
             candyShop.CreateCandies();
             candyShop.CreateCandies();
             candyShop.CreateLollypops();
             candyShop.CreateLollypops();
+
             candyShop.PrintInfo();
+
             candyShop.RaisePrices(1.1);
             candyShop.SellSweets("candy", 2);
             candyShop.SellSweets("lollypop", 1);
+
             candyShop.PrintInfo();
+
+            candyShop.BuySugar(58);
+
+            candyShop.PrintInfo();
+
             Console.ReadLine();
-            // Should print out:
-            // Invetory: 2 candies, 2 lollipops, Income: 0$, Sugar: 270gr
-            //candyShop.Sell(CandyShop.CANDY, 1);
-            //candyShop.PrintInfo();
-            // Should print out:
-            // "Invetory: 1 candies, 2 lollipops, Income: 20$, Sugar: 285gr"
-            //candyShop.Raise(5);
-            //candyShop.Sell(CandyShop.LOLLIPOP, 1);
-            //candyShop.PrintInfo();
-            // Should print out:
-            // "Invetory: 1 candies, 1 lollipops, Income: 35$, Sugar: 285gr"
-            //candyShop.BuySugar(300);
-            //candyShop.PrintInfo();
-            // Should print out:
-            // "Invetory: 1 candies, 1 lollipops, Income: 5$, Sugar: 315gr"
         }
     }
 }

@@ -126,6 +126,13 @@ namespace CandyShopApp
             }
         }
 
+        public void BuySugar(int amountToBuy)
+        {
+            sugarStore += amountToBuy;
+            double amountToPay = amountToBuy * 0.1;
+            income -= amountToPay;
+        }
+
         public void PrintInfo()
         {
             Console.WriteLine("Inventory: {0} candies, {1} lollipops, Income: {2}, Sugar: {3}gr", 
