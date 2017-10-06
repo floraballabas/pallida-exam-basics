@@ -8,6 +8,10 @@ namespace CandyShopApp
 {
     public class CandyShop
     {
+        Sweets sweets = new Sweets();
+        Lollypop lollypopClass = new Lollypop();
+        Candies candyClass = new Candies();
+
         private double sugarStore;
         private double income = 0;
         private List<Sweets> candyStore = new List<Sweets>();
@@ -81,7 +85,6 @@ namespace CandyShopApp
 
         public List<Sweets> CreateCandies()
         {
-            var candyClass = new Candies();
             listOfCandies.Add(candyClass);
             sugarStore -= candyClass.Sugar;
             candyStore.Add(candyClass);
@@ -89,11 +92,16 @@ namespace CandyShopApp
         }
         public List<Sweets> CreateLollypops()
         {
-            var lollypopClass = new Lollypop();
             listOfLollypops.Add(lollypopClass);
             sugarStore -= lollypopClass.Sugar;
             candyStore.Add(lollypopClass);
             return candyStore;
+        }
+        public void RaisePrices(double percentageToRaiseTo)
+        {
+            candyClass.Price *= percentageToRaiseTo;
+            lollypopClass.Price *= percentageToRaiseTo;
+            Console.WriteLine("{0} candy {1} lollypop", candyClass.Price, lollypopClass.Price);
         }
         public void PrintInfo()
         {

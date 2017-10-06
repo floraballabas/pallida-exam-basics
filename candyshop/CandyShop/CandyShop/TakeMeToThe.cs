@@ -30,8 +30,12 @@ namespace CandyShopApp
             // "Inventory: 3 candies, 2 lollipops, Income: 100, Sugar: 400gr"
             var candyShop = new CandyShop(300);
             candyShop.CreateCandies();
+            candyShop.CreateCandies();
+            candyShop.CreateCandies();
+            candyShop.CreateLollypops();
             candyShop.CreateLollypops();
             candyShop.PrintInfo();
+            candyShop.RaisePrices(1.1);
             Console.ReadLine();
             // Should print out:
             // Invetory: 2 candies, 2 lollipops, Income: 0$, Sugar: 270gr
