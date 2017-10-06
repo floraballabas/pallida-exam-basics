@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UniqueCharacters
 {
-    public class TestClass
+    public class MainProgram
     {
         static void Main(string[] args)
         {

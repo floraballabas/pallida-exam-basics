@@ -9,12 +9,14 @@ using UniqueCharacters;
 namespace TestOfUniqueCharacters
 {
     [TestFixture]
-    public class MainClass
+    public class TestClass
     {
         [Test]
         public void TestWithSimpleString()
         {
-
+            string input = "kiscica";
+            List<char> expectedList = new List<char> {'k', 's', 'a'};
+            Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }
     }
 }
