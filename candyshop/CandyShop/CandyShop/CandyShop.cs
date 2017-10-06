@@ -14,7 +14,6 @@ namespace CandyShopApp
 
         private double sugarStore;
         private double income = 0;
-        private List<Sweets> candyStore = new List<Sweets>();
         private List<Sweets> listOfCandies = new List<Sweets>();
         private List<Sweets> listOfLollypops = new List<Sweets>();
 
@@ -23,80 +22,18 @@ namespace CandyShopApp
             this.sugarStore = sugarStore;
         }
 
-        public double SugarStore
-        {
-            get
-            {
-                return sugarStore;
-            }
-            set
-            {
-                sugarStore = value;
-            }
-        }
-
-        public double Income
-        {
-            get
-            {
-                return income;
-            }
-            set
-            {
-                income = value;
-            }
-        }
-
-        public List<Sweets> CandyStore
-        {
-            get
-            {
-                return candyStore;
-            }
-            set
-            {
-                candyStore = value;
-            }
-        }
-
-        public List<Sweets> ListOfCandies
-        {
-            get
-            {
-                return listOfCandies;
-            }
-            set
-            {
-                listOfCandies = value;
-            }
-        }
-
-        public List<Sweets> ListOfLollypops
-        {
-            get
-            {
-                return listOfLollypops;
-            }
-            set
-            {
-                listOfLollypops = value;
-            }
-        }
-
         public List<Sweets> CreateCandies()
         {
             listOfCandies.Add(candyClass);
             sugarStore -= candyClass.Sugar;
-            candyStore.Add(candyClass);
-            return candyStore;
+            return listOfCandies;
         }
 
         public List<Sweets> CreateLollypops()
         {
             listOfLollypops.Add(lollypopClass);
             sugarStore -= lollypopClass.Sugar;
-            candyStore.Add(lollypopClass);
-            return candyStore;
+            return listOfLollypops;
         }
 
         public void RaisePrices(double percentageToRaiseTo)
