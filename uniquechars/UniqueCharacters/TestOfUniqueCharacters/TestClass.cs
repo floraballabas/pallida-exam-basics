@@ -14,28 +14,31 @@ namespace TestOfUniqueCharacters
         [Test]
         public void TestWithSimpleString()
         {
-            string input = "kiscica";
+            var input = "kiscica";
             List<char> expectedList = new List<char> {'k', 's', 'a'};
             Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }
+
         [Test]
         public void TestWithEmptyString()
         {
-            string input = string.Empty;
+            var input = string.Empty;
             List<char> expectedList = new List<char>();
             Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }
+
         [Test]
         public void TestWithNoUNiqueCharacters()
         {
-            string input = "mama";
+            var input = "mama";
             List<char> expectedList = new List<char>();
             Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }
+
         [Test]
         public void TestWithUppercaseCharacters()
         {
-            string input = "Cica";
+            var input = "Cica";
             List<char> expectedList = new List<char> { 'i', 'a' };
             Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }

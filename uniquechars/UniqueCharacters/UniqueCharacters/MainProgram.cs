@@ -15,7 +15,7 @@ namespace UniqueCharacters
             // Create basic unit tests for it with at least 3 different test cases
             // Print the characters from that list in the following format:
             // "n", "g", "r", "m"
-            string inputToCheck = "anagram";
+            var inputToCheck = "anagram";
             foreach (var charachter in UniqueCharacter(inputToCheck))
             {
                 Console.Write(charachter + ", ");

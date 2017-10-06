@@ -33,6 +33,9 @@ namespace CandyShopApp
             candyShop.CreateCandies();
             candyShop.CreateCandies();
             candyShop.CreateCandies();
+            candyShop.CreateCandies();
+            candyShop.CreateCandies();
+            candyShop.CreateLollypops();
             candyShop.CreateLollypops();
             candyShop.CreateLollypops();
 
