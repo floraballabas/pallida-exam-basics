@@ -26,7 +26,6 @@ namespace UniqueCharacters
         public static List<char> UniqueCharacter(string input)
         {
             List<char> uniqueLetterList = new List<char>();
-
             Dictionary<char, int> letterDictionary = new Dictionary<char, int>();
             char[] inputArray = input.ToCharArray();
 
