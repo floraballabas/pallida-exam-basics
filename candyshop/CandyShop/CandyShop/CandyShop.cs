@@ -90,6 +90,7 @@ namespace CandyShopApp
             candyStore.Add(candyClass);
             return candyStore;
         }
+
         public List<Sweets> CreateLollypops()
         {
             listOfLollypops.Add(lollypopClass);
@@ -97,12 +98,34 @@ namespace CandyShopApp
             candyStore.Add(lollypopClass);
             return candyStore;
         }
+
         public void RaisePrices(double percentageToRaiseTo)
         {
             candyClass.Price *= percentageToRaiseTo;
             lollypopClass.Price *= percentageToRaiseTo;
-            Console.WriteLine("{0} candy {1} lollypop", candyClass.Price, lollypopClass.Price);
+            Console.WriteLine("Raised prices to : {0}$ for candy and {1}$ for lollypop", candyClass.Price, lollypopClass.Price);
         }
+
+        public void SellSweets(string typeToSell, int amountToSell)
+        {
+            if (typeToSell == "candy")
+            {
+                for (int i = 0; i < amountToSell; i++)
+                {
+                    listOfCandies.RemoveAt(0);
+                    income += candyClass.Price;
+                }
+            }
+            if (typeToSell == "lollypop")
+            {
+                for (int i = 0; i < amountToSell; i++)
+                {
+                    listOfLollypops.RemoveAt(0);
+                    income += lollypopClass.Price;
+                }
+            }
+        }
+
         public void PrintInfo()
         {
             Console.WriteLine("Inventory: {0} candies, {1} lollipops, Income: {2}, Sugar: {3}gr", 

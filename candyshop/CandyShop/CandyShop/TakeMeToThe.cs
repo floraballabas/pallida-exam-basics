@@ -36,6 +36,9 @@ namespace CandyShopApp
             candyShop.CreateLollypops();
             candyShop.PrintInfo();
             candyShop.RaisePrices(1.1);
+            candyShop.SellSweets("candy", 2);
+            candyShop.SellSweets("lollypop", 1);
+            candyShop.PrintInfo();
             Console.ReadLine();
             // Should print out:
             // Invetory: 2 candies, 2 lollipops, Income: 0$, Sugar: 270gr
