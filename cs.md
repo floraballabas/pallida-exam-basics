@@ -32,8 +32,8 @@ The application is accepted if:
 
 ###  What is the difference between a function and a method? [2p]
 #### Your answer:
-[add your answer here]
+In OOP they refer to functions if they are not within a class, and methods if they are written inside a certain class. In C# though, we cannot write functions outside of a class, so everything is basically a method.
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-[add your answer here]
+We have to create a constructor whenever we create a class or struct(and it has to have the same name). When we create a new object, the contructor is the one that is being called. If we don't create one, we won't be able to specify what parameters should be default for that type. 
