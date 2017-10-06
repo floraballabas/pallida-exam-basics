@@ -27,7 +27,8 @@ namespace UniqueCharacters
         {
             List<char> uniqueLetterList = new List<char>();
             Dictionary<char, int> letterDictionary = new Dictionary<char, int>();
-            char[] inputArray = input.ToCharArray();
+            string inputLower = input.ToLower();
+            char[] inputArray = inputLower.ToCharArray();
 
             foreach (var character in inputArray)
             {

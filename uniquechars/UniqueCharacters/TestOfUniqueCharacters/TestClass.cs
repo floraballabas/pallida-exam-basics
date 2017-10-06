@@ -32,5 +32,12 @@ namespace TestOfUniqueCharacters
             List<char> expectedList = new List<char>();
             Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }
+        [Test]
+        public void TestWithUppercaseCharacters()
+        {
+            string input = "Cica";
+            List<char> expectedList = new List<char> { 'i', 'a' };
+            Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
+        }
     }
 }
