@@ -25,5 +25,12 @@ namespace TestOfUniqueCharacters
             List<char> expectedList = new List<char>();
             Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
         }
+        [Test]
+        public void TestWithNoUNiqueCharacters()
+        {
+            string input = "mama";
+            List<char> expectedList = new List<char>();
+            Assert.AreEqual(expectedList, MainProgram.UniqueCharacter(input));
+        }
     }
 }
