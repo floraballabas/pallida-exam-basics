@@ -8,5 +8,10 @@ namespace CandyShopApp
 {
     public class Lollypop : Sweets
     {
+        public Lollypop(double percentage)
+        {
+            this.price = 10 * percentage;
+            this.sugar = 5;
+        }
     }
 }

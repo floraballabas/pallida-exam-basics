@@ -9,5 +9,10 @@ namespace CandyShopApp
     public class Candies : Sweets
     {
 
+        public Candies(double percentage)
+        {
+            this.price = 20 * percentage;
+            this.sugar = 10;
+        }
     }
 }
