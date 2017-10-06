@@ -26,7 +26,8 @@ namespace FavouriteAnimal
 
         public void RunWithoutArguement()
         {
-            Console.WriteLine("C# FavouriteAnimals [animal] [animal]");
+            Console.WriteLine("C# FavouriteAnimals command arguements: \n[cat][cat] - it will add cat to the list \n[horse][horse] " +
+                "\n[poni][poni] \n[snake][snake] \n[animal][animal] - if you want to add any other animal then my four favourite");
         }
     }
 }

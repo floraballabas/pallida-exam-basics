@@ -21,7 +21,19 @@ namespace FavouriteAnimal
             // The program should only save animals, no need to print them
             var commandLineClass = new CommandLineArguement();
 
-            if (args.Contains("animal"))
+            if (args.Contains("cat") || args.Contains("horse") || args.Contains("poni") || args.Contains("snake"))
+            {
+                if (args[0] == args[1])
+                {
+                    string animalToStore = args[1];
+                    commandLineClass.AddFavouriteAnimal(animalToStore);
+                }
+                else
+                {
+                    Console.WriteLine("You mispelled the arguement!");
+                }
+            }
+            else if (args.Contains("animal"))
             {
                 string animalToStore = args[1];
                 commandLineClass.AddFavouriteAnimal(animalToStore);
