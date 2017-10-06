@@ -40,6 +40,9 @@ namespace CandyShopApp
             candyShop.CreateLollypops();
 
             candyShop.PrintInfo();
+            candyShop.SellSweets("candy", 2);
+            candyShop.SellSweets("lollypop", 1);
+            candyShop.PrintInfo();
 
             candyShop.RaisePrices(1.1);
             candyShop.SellSweets("candy", 2);

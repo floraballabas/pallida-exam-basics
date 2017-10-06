@@ -23,6 +23,7 @@ namespace UniqueCharacters
             Console.ReadLine();
 
         }
+
         public static List<char> UniqueCharacter(string input)
         {
             List<char> uniqueLetterList = new List<char>();
