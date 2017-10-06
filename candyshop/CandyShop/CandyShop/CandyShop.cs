@@ -90,10 +90,15 @@ namespace CandyShopApp
         public List<Sweets> CreateLollypops()
         {
             var lollypopClass = new Lollypop();
-            listOfCandies.Add(lollypopClass);
+            listOfLollypops.Add(lollypopClass);
             sugarStore -= lollypopClass.Sugar;
             candyStore.Add(lollypopClass);
             return candyStore;
+        }
+        public void PrintInfo()
+        {
+            Console.WriteLine("Inventory: {0} candies, {1} lollipops, Income: {2}, Sugar: {3}gr", 
+                listOfCandies.Count, listOfLollypops.Count, income, sugarStore);
         }
     }
 }

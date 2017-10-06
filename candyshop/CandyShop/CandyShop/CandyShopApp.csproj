@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Candies.cs" />
+    <Compile Include="CandyShop.cs" />
+    <Compile Include="Lollypop.cs" />
+    <Compile Include="Sweets.cs" />
+    <Compile Include="TakeMeToThe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
